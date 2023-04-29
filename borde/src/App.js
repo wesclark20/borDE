@@ -6,8 +6,7 @@ function App() {
   return (
     <>
       <Navigationbar />
-      <div className="App">Hello World</div>
-      <EventButton/>
+      <EventButton />
     </>
   );
 }
