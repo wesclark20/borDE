@@ -7,12 +7,13 @@ import Form from "react-bootstrap/Form";
 
 function Navigationbar() {
   return (
-    <Navbar bg="light" expand="lg" fixed="top">
+    <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#home">BorDE</Navbar.Brand>
-        <Nav>
-          <Nav.Link href="#Events">Events</Nav.Link>
-          <Nav.Link href="#Locations">Locations</Nav.Link>
+        <Nav className="me-auto">
+          <Nav.Link href="#home">Events</Nav.Link>
+          <Nav.Link href="#features">Dining</Nav.Link>
+          <Nav.Link href="#pricing">Locations</Nav.Link>
         </Nav>
         <Form className="d-flex">
           <Form.Control
