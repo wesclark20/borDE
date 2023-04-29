@@ -1,4 +1,3 @@
-import "./App.css";
 import EventButton from "./Components/EventButton";
 import Navigationbar from "./Components/Navigationbar";
 
