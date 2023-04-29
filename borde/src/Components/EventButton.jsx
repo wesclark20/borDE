@@ -1,17 +1,10 @@
 import React from "react";
-import Button from "react-bootstrap/Button";
-import Stack from "react-bootstrap/Stack";
+//import Button from "react-bootstrap/Button";
+//import Stack from "react-bootstrap/Stack";
 
 function EventButton() {
     return (
-    <Stack direction="horizontal" gap={2}>
-  <Button as="a" variant="primary">
-    Blue button as link
-  </Button>
-  <Button as="a" variant="warning">
-    Yellow button link
-  </Button>
-</Stack>
+        <button type="button" class="btn btn-info btn-lg btn-block">Block level button</button>
 );
 }
 export default EventButton;
