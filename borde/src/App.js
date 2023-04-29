@@ -1,11 +1,11 @@
-import EventButton from "./Components/EventButton";
 import Navigationbar from "./Components/Navigationbar";
+import Body from "./Components/Body";
 
 function App() {
   return (
     <>
       <Navigationbar />
-      <EventButton />
+      <Body />
     </>
   );
 }
