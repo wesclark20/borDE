@@ -1,11 +1,12 @@
 import "./App.css";
-import Nav from "./Components/Nav.jsx";
+import EventButton from "./Components/EventButton";
+import Navigationbar from "./Components/Navigationbar";
 
 function App() {
   return (
     <>
-      <Nav />
-      <div className="App">Hello World</div>
+      <Navigationbar />
+      <EventButton />
     </>
   );
 }
