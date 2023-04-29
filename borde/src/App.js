@@ -1,4 +1,5 @@
 import EventButton from "./Components/EventButton";
+import EventCard from "./Components/EventCard";
 import Navigationbar from "./Components/Navigationbar";
 
 function App() {
@@ -6,6 +7,7 @@ function App() {
     <>
       <Navigationbar />
       <EventButton />
+      <EventCard />
     </>
   );
 }

@@ -4,15 +4,14 @@ import Card from 'react-bootstrap/Card';
 
 function EventCard() {
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="holder.js/100px180" />
+    <Card>
+      <Card.Header>EVENT TYPE</Card.Header>
       <Card.Body>
-        <Card.Title>Ian Duffy</Card.Title>
-        <Card.Subtitle className="mb-2 text-muted">Newark, DE</Card.Subtitle>
+        <Card.Title>EVENT TITLE</Card.Title>
         <Card.Text>
-          Sophomore at the University of Delaware studying Computer Science and Cybersecurity.
+          EVENT DESCRIPTION
         </Card.Text>
-        <Button variant="primary">Visit Profile</Button>
+        <Button variant="primary">REGISTER</Button>
       </Card.Body>
     </Card>
   );

@@ -4,7 +4,7 @@ import React from "react";
 
 function EventButton() {
     return (
-        <button type="button" class="btn btn-info btn-lg btn-block">Block level button</button>
+        <button type="button" class="btn btn-info btn-lg btn-block">Create DEvent</button>
 );
 }
 export default EventButton;
