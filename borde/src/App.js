@@ -1,10 +1,10 @@
 import "./App.css";
-import Nav from "./Components/Nav.jsx";
+import Navigationbar from "./Components/Navigationbar";
 
 function App() {
   return (
     <>
-      <Nav />
+      <Navigationbar />
       <div className="App">Hello World</div>
     </>
   );
