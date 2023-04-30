@@ -42,10 +42,10 @@ function Footer() {
           </Col>
           <Col>
             <ProfileCard
-              name={"Michael Lutz"}
-              img={require("../Images/misery-club-penguin.gif")}
-              email={"mplutz@udel.edu"}
-              bio={"Freshman Computer Science Student"}
+              name={"Wesley Clark"}
+              img={require("../Images/wes_selfie.jpg")}
+              email={"wesclark@udel.edu"}
+              bio={"Junior Cybersecurity Engineering Student"}
             />
           </Col>
           <Col>
