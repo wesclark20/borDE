@@ -32,7 +32,7 @@ function EventForm(props) {
   };
 
   return (
-    <Form className="border px-5 py-3 rounded" onSubmit={handleSubmit}>
+    <Form className="border px-5 py-3 rounded bg-light" onSubmit={handleSubmit}>
       <Stack>
         <h1 className="mx-auto">Create Event</h1>
         <>
@@ -73,14 +73,13 @@ function EventForm(props) {
           >
             <option>Choose Type</option>
             <option>Volunteer Program</option>
-            <option>Food Drive</option>
+            <option>ood Drive</option>
             <option>Clothing Drive</option>
             <option>Fundraiser</option>
             <option>Walkathon</option>
             <option>Marathon</option>
             <option>Sales</option>
             <option>Furniture Drive</option>
-            <option>Food Program</option>
           </Form.Select>
           <InputGroup className="mb-3">
             <InputGroup.Text id="basic-addon1">Description</InputGroup.Text>

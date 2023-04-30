@@ -57,9 +57,6 @@ function Navigationbar(props) {
           <NavDropdown.Item onClick={() => props.setFilter("furniture drive")}>
             Furniture Drive
           </NavDropdown.Item>
-          <NavDropdown.Item onClick={() => props.setFilter("food program")}>
-            Food Program
-          </NavDropdown.Item>
         </NavDropdown>
       </Container>
     </Navbar>

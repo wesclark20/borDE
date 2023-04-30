@@ -7,7 +7,7 @@ function EventButton(props) {
     <Button
       variant="secondary"
       onClick={props.onClick}
-      className="col-md-4 mx-auto mt-4"
+      className="col-md-5 mx-auto"
     >
       Create DEvent{" "}
     </Button>
