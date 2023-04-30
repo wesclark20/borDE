@@ -34,6 +34,17 @@ def members():
 def api():
     with open("data.json", "r") as f:
         stored = json.load(f)
+        
+    #take the data from the resulting dictionary above
+        title = stored['title']
+        date = stored['time']
+        time = stored['time']
+        description = stored['description']
+        email = stored['email']
+    #create a user post and add it to the database
+        userPost = models.UserPost(title=title, date=date, time=time, description=description, email=email)
+        db.session.add(userPost)
+        db.session.commit()
 
         newReport = json.loads(request.data)
         stored['events'].append(newReport)
