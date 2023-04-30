@@ -14,6 +14,14 @@ app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
 db.init_app(app)
 
 
+def create_database(app):
+    if not path.exists('database.db'):
+        db.create_all(app=app)
+        print('Created Database')
+
+# ---=== End SQLAlchemy nonsense ===---#
+
+
 @app.route("/members")
 def members():
     return {"members": ["Member1", "Member2", "Member3"]}
@@ -34,4 +42,5 @@ def api():
 
 
 if __name__ == "__main__":
+    create_database(app)
     app.run(debug=True)
