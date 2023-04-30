@@ -1,26 +1,13 @@
-from bottle import Bottle, static_file, run, route, post, request
-from sqlalchemy import create_engine, Column, Integer, String, text
+from flask import Flask, render_template
 
-app = Bottle()
+app = Flask(__name__)
+
+'''static_folder = '.\\borde\public'''
 
 @app.route('/')
 def home():
-    return static_file('index.html', root='.\\borde\public')
+    return app.send_static_file('.\\borde\public\index.html')
+    '''return "<h1> I don't know how the hell this is suposed to work!</h1>"'''
 
-@app.route('/<filename:path>')
-def serve_static(filename):
-    return static_file(filename, root='.\\borde\src')
-
-@app.post('/login')
-def do_login():
-    pass
-
-@app.post('/signup')
-def do_signup():
-    pass
-
-@app.post('/post_event')
-def do_event():
-    pass
-
-run(app, host='localhost', port=8080, debug=True)
+if __name__ == '__main__':
+    app.run(host="localhost", port="8080", debug=True)
