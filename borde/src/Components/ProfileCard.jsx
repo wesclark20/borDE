@@ -5,7 +5,6 @@ import Card from 'react-bootstrap/Card';
 function ProfileCard(props) {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{props.email}</Card.Subtitle>
