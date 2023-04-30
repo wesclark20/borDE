@@ -7,8 +7,13 @@ function EventCard(props) {
   console.log(props);
   return (
     <Card>
-      <Card.Body>
+      <Card.Header>
         <Card.Title>{data.title}</Card.Title>
+        <Card.Text>
+          {data.time} on {data.date}
+        </Card.Text>
+      </Card.Header>
+      <Card.Body>
         <Card.Text>{data.description}</Card.Text>
         <Button variant="primary">REGISTER</Button>
       </Card.Body>

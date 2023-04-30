@@ -3,12 +3,14 @@ import EventButton from "./EventButton";
 import EventCard from "./EventCard";
 import EventForm from "./EventForm";
 let nextId = 0;
-function Events() {
+function Events(props) {
   const [canSubmit, setCanSubmit] = useState(false);
   const [events, setEvents] = useState([]);
 
   async function getEvents() {
-    const eventsResponse = await fetch("http://127.0.0.1:5000/api");
+    const eventsResponse = await fetch("http://127.0.0.1:5000/api", {
+      mode: "cors",
+    });
     const eventsObj = await eventsResponse.json();
     setEvents(eventsObj.events);
   }
@@ -27,7 +29,9 @@ function Events() {
         <EventForm setCanSubmit={setCanSubmit} getEvents={getEvents} />
       ) : null}
       {events.map((event) => {
-        return <EventCard key={nextId++} data={event} />;
+        return props.filter == null || props.filter == event.type ? (
+          <EventCard key={nextId++} data={event} />
+        ) : null;
       })}
     </>
   );

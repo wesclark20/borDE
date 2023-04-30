@@ -34,10 +34,8 @@ def api():
             print("stored:", stored)
         with open("data.json", "w") as f:
             json.dump(stored, f)
-    if request.method == 'GET':
-        with open("data.json", "r") as data:
-            return data.read()
-    return None
+    with open("data.json", "r") as data:
+        return data.read()
 
 
 if __name__ == "__main__":
