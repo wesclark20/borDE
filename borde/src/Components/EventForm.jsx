@@ -5,7 +5,6 @@ import Button from "react-bootstrap/Button";
 import InputGroup from "react-bootstrap/InputGroup";
 
 // make a function, create whole form, press submit, get info to json data, and then make a post request
-
 function EventForm(props) {
   const [formData, setFormData] = useState({});
 
@@ -25,12 +24,10 @@ function EventForm(props) {
   };
 
   const handleSubmit = (e) => {
+    props.getEvents();
     e.preventDefault();
-    const jsonFormData = JSON.stringify(formData);
+    console.log(formData);
     setCanSubmit(false);
-    props.eventArr.push(props.id);
-    props.setId(props.id + 1);
-    console.log(jsonFormData);
     sendDataToDatabase(formData);
   };
 
@@ -67,13 +64,15 @@ function EventForm(props) {
             />
           </InputGroup>
           <Form.Select
+            required
             className="mb-3"
             placeholder={"Choose Catagory"}
             onChange={(e) =>
               setFormData({ ...formData, type: e.target.value.toLowerCase() })
             }
           >
-            <option>Volumnteer Program</option>
+            <option>Choose Type</option>
+            <option>Volunteer Program</option>
             <option>Food Drive</option>
             <option>Clothing Drive</option>
             <option>Fundraiser</option>

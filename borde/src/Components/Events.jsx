@@ -1,29 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import EventButton from "./EventButton";
 import EventCard from "./EventCard";
 import EventForm from "./EventForm";
-
-const eventArr = [];
+let nextId = 0;
 function Events() {
-  const [id, setId] = useState(0);
   const [canSubmit, setCanSubmit] = useState(false);
+  const [events, setEvents] = useState([]);
+
+  async function getEvents() {
+    const eventsResponse = await fetch("http://127.0.0.1:5000/api");
+    const eventsObj = await eventsResponse.json();
+    setEvents(eventsObj.events);
+  }
+  useEffect(() => {
+    getEvents();
+  }, [canSubmit]);
+
   const handleClick = () => {
-    console.log(eventArr);
     setCanSubmit(true);
   };
+
   return (
     <>
       <EventButton onClick={handleClick} />
       {canSubmit ? (
-        <EventForm
-          setCanSubmit={setCanSubmit}
-          eventArr={eventArr}
-          setId={setId}
-          id={id}
-        />
+        <EventForm setCanSubmit={setCanSubmit} getEvents={getEvents} />
       ) : null}
-      {eventArr.map((i) => {
-        return <EventCard key={i} />;
+      {events.map((event) => {
+        return <EventCard key={nextId++} data={event} />;
       })}
     </>
   );

@@ -4,11 +4,12 @@ import Card from "react-bootstrap/Card";
 
 function EventCard(props) {
   const data = props.data;
+  console.log(props);
   return (
     <Card>
       <Card.Body>
-        <Card.Title>EVENT TITLE</Card.Title>
-        <Card.Text>EVENT DESCRIPTION</Card.Text>
+        <Card.Title>{data.title}</Card.Title>
+        <Card.Text>{data.description}</Card.Text>
         <Button variant="primary">REGISTER</Button>
       </Card.Body>
     </Card>
