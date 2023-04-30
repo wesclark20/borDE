@@ -12,7 +12,7 @@ function EventForm(props) {
   const setCanSubmit = props.setCanSubmit;
 
   const sendDataToDatabase = (formData) => {
-    const url = "https://example.com/api/data";
+    const url = "http://127.0.0.1:5000/api";
 
     fetch(url, {
       method: "POST",
@@ -21,10 +21,7 @@ function EventForm(props) {
       },
       body: JSON.stringify(formData),
       mode: "no-cors",
-    })
-      .then((response) => response.json())
-      .then((data) => console.log(data))
-      .catch((error) => console.error(error));
+    });
   };
 
   const handleSubmit = (e) => {
