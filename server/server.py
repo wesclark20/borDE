@@ -3,7 +3,7 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 import json
 from os import path
-from . import models
+import models as models
 
 app = Flask(__name__)
 CORS(app, origins=['http://localhost:3000', 'http://localhost:5000'])
@@ -17,8 +17,10 @@ db.init_app(app)
 
 def create_database(app):
     if not path.exists('database.db'):
-        db.create_all(app=app)
+        with app.app_context():
+            db.create_all()
         print('Created Database')
+create_database(app)
 
 # ---=== End SQLAlchemy nonsense ===---#
 
@@ -43,5 +45,4 @@ def api():
 
 
 if __name__ == "__main__":
-    create_database(app)
     app.run(debug=True)
