@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 @app.route('/')
 def serveIndex():
-    return send_file('static/index.html')
+    return send_file('build/index.html')
 
-@app.route('/static/<path:path')
+@app.route('/build/<path:path')
 def serveStatic(path):
     return send_from_directory('static', path)
 
