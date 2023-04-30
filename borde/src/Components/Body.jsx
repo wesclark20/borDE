@@ -3,7 +3,7 @@ import Stack from "react-bootstrap/Stack";
 
 function Body(props) {
   return (
-    <Stack gap={4} className="col-md-6 mx-auto">
+    <Stack gap={4} className="col-md-5 mx-auto">
       <Events filter={props.filter} />
     </Stack>
   );

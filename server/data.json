@@ -1,64 +1,116 @@
 {
   "events": [
     {
-      "title": "Community Picnic",
-      "date": "2022-05-28",
-      "time": "12:00 PM",
-      "description": "Bring your family and enjoy food, games, and music at the local park."
+      "title": "Annual Community Food Drive",
+      "date": "2022-11-12",
+      "time": "9:00 AM - 12:00 PM",
+      "description": "Help collect food items for families in need.",
+      "type": "food drive"
     },
     {
-      "title": "Volunteer Day",
-      "date": "2022-06-12",
-      "time": "9:00 AM",
-      "description": "Help beautify the community by volunteering your time to clean up the streets."
-    },
-    {
-      "title": "Summer Film Series",
-      "date": "2022-06-24",
-      "time": "8:00 PM",
-      "description": "Watch classic films under the stars at our weekly outdoor film series."
-    },
-    {
-      "title": "Art Walk",
-      "date": "2022-07-09",
-      "time": "10:00 AM",
-      "description": "View and purchase artwork from local artists at our annual art walk."
-    },
-    {
-      "title": "Community Yard Sale",
-      "date": "2022-07-23",
-      "time": "7:00 AM",
-      "description": "Sell your unwanted items or browse for treasures at our community yard sale."
-    },
-    {
-      "title": "Community Concert",
-      "date": "2022-08-06",
-      "time": "7:00 PM",
-      "description": "Listen to live music from local bands and enjoy food and drinks at our annual community concert."
-    },
-    {
-      "title": "Neighborhood Block Party",
-      "date": "2022-08-20",
-      "time": "2:00 PM",
-      "description": "Meet your neighbors and enjoy games, food, and activities at our annual neighborhood block party."
-    },
-    {
-      "title": "Community Clean-Up Day",
-      "date": "2022-09-10",
-      "time": "9:00 AM",
-      "description": "Help keep our community beautiful by volunteering to clean up local parks and streets."
-    },
-    {
-      "title": "Farmers Market",
+      "title": "Charity Walkathon",
       "date": "2022-09-24",
-      "time": "10:00 AM",
-      "description": "Shop for fresh produce, baked goods, and handmade crafts at our weekly farmers market."
+      "time": "8:00 AM - 11:00 AM",
+      "description": "Join us for a 5k walkathon to raise funds for cancer research.",
+      "type": "walkathon"
     },
     {
-      "title": "Halloween Parade",
-      "date": "2022-10-31",
-      "time": "6:00 PM",
-      "description": "Dress up in your spookiest costume and join us for a parade through the community followed by trick-or-treating."
+      "title": "Community Garage Sale",
+      "date": "2023-05-06",
+      "time": "7:00 AM - 1:00 PM",
+      "description": "Sell your old items and support a local charity.",
+      "type": "sales"
+    },
+    {
+      "title": "Annual Furniture Drive",
+      "date": "2022-08-20",
+      "time": "10:00 AM - 2:00 PM",
+      "description": "Donate your old furniture to help families in need.",
+      "type": "furniture drive"
+    },
+    {
+      "title": "Youth Volunteer Program",
+      "date": "2023-03-18",
+      "time": "1:00 PM - 3:00 PM",
+      "description": "Teach youth the value of giving back to their community.",
+      "type": "volunteer program"
+    },
+    {
+      "title": "Annual Community Food Drive",
+      "date": "2022-11-12",
+      "time": "9:00 AM - 12:00 PM",
+      "description": "Help collect food items for families in need.",
+      "type": "food drive"
+    },
+    {
+      "title": "Charity Walkathon",
+      "date": "2022-09-24",
+      "time": "8:00 AM - 11:00 AM",
+      "description": "Join us for a 5k walkathon to raise funds for cancer research.",
+      "type": "walkathon"
+    },
+    {
+      "title": "Community Garage Sale",
+      "date": "2023-05-06",
+      "time": "7:00 AM - 1:00 PM",
+      "description": "Sell your old items and support a local charity.",
+      "type": "sales"
+    },
+    {
+      "title": "Annual Furniture Drive",
+      "date": "2023-08-20",
+      "time": "10:00 AM - 2:00 PM",
+      "description": "Donate your old furniture to help families in need.",
+      "type": "furniture drive"
+    },
+    {
+      "title": "Youth Volunteer Program",
+      "date": "2023-03-18",
+      "time": "1:00 PM - 3:00 PM",
+      "description": "Teach youth the value of giving back to their community.",
+      "type": "volunteer program"
+    },
+    {
+      "title": "Winter Clothing Drive",
+      "date": "2022-12-02",
+      "time": "10:00 AM - 12:00 PM",
+      "description": "Donate gently used winter clothing items to help keep families warm.",
+      "type": "clothing drive"
+    },
+    {
+      "title": "Back to School Clothing Drive",
+      "date": "2023-08-05",
+      "time": "9:00 AM - 11:00 AM",
+      "description": "Donate gently used school clothes to support students in need.",
+      "type": "clothing drive"
+    },
+    {
+      "title": "Annual Charity Auction",
+      "date": "2022-10-15",
+      "time": "6:00 PM - 9:00 PM",
+      "description": "Join us for our annual charity auction to support our community programs.",
+      "type": "fundraiser"
+    },
+    {
+      "title": "Bake Sale Fundraiser",
+      "date": "2023-04-22",
+      "time": "10:00 AM - 2:00 PM",
+      "description": "Enjoy delicious baked goods while supporting a good cause.",
+      "type": "fundraiser"
+    },
+    {
+      "title": "Charity Concert",
+      "date": "2023-09-09",
+      "time": "7:00 PM - 9:00 PM",
+      "description": "Come enjoy an evening of music and help us raise funds for our community programs.",
+      "type": "fundraiser"
+    },
+    {
+      "title": "Annual Charity Marathon",
+      "date": "2023-06-18",
+      "time": "8:00 AM - 12:00 PM",
+      "description": "Join us for our annual charity marathon and help us raise funds for our community programs.",
+      "type": "marathon"
     }
   ]
 }
