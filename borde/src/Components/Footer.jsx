@@ -35,7 +35,7 @@ function Footer() {
           <Col>
             <ProfileCard
               name={"Michael Lutz"}
-              img={require("../Images/misery-club-penguin.gif")}
+              img={require("../Images/headshot.png")}
               email={"mplutz@udel.edu"}
               bio={"Freshman Computer Science Student"}
             />
