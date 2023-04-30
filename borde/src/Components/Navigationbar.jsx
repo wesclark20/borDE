@@ -20,6 +20,9 @@ function Navigationbar(props) {
           About Us
         </Navbar.Text>
         <NavDropdown title="Filter">
+          <NavDropdown.Item onClick={() => props.setFilter(null)}>
+            None
+          </NavDropdown.Item>
           <NavDropdown.Item
             onClick={() => props.setFilter("volunteer program")}
           >

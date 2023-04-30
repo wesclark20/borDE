@@ -15,7 +15,7 @@ function ProfileCard(props) {
         <Card.Title>{props.name}</Card.Title>
         <Card.Subtitle className="mb-2 text-muted">{props.email}</Card.Subtitle>
         <Card.Text>{props.bio}</Card.Text>
-        <Button variant="primary">Visit Profile</Button>
+        <Button variant="primary">Contact</Button>
       </Card.Body>
     </Card>
   );
