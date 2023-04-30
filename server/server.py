@@ -1,26 +1,9 @@
 from flask import Flask, request
 from flask_cors import CORS
-from flask_sqlalchemy import SQLAlchemy
 import json
-# from os import path
 
 app = Flask(__name__)
 CORS(app, origins=['http://localhost:3000'])
-
-
-# ---=== SQLAlchemy Stuff ===---#
-# db = SQLAlchemy()
-# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///database.db"
-# db.init_app(app)
-
-
-# def create_database(app):
-#     if not path.exists('database.db'):
-#         db.create_all(app=app)
-#         print('Created Database')
-
-# ---=== End SQLAlchemy nonsense ===---#
-
 
 @app.route('/api', methods=['GET', 'POST'])
 def api():
@@ -39,5 +22,4 @@ def api():
 
 
 if __name__ == "__main__":
-    # create_database(app)
     app.run(debug=True)
