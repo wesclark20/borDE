@@ -4,11 +4,21 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
 
 function Navigationbar(props) {
+  const scrollTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+  const scrollBottom = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand href="#home">BorDE</Navbar.Brand>
-        <Navbar.Text>About Us</Navbar.Text>
+        <Navbar.Brand onClick={scrollTop} style={{ cursor: "pointer" }}>
+          Affordable
+        </Navbar.Brand>
+        <Navbar.Text onClick={scrollBottom} style={{ cursor: "pointer" }}>
+          About Us
+        </Navbar.Text>
         <NavDropdown title="Filter">
           <NavDropdown.Item
             onClick={() => props.setFilter("volunteer program")}
