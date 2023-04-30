@@ -11,10 +11,10 @@ function Navigationbar(props) {
     window.scrollTo(0, document.body.scrollHeight);
   };
   return (
-    <Navbar bg="light" expand="lg" sticky="top">
+    <Navbar bg="light" expand="md" sticky="top">
       <Container>
         <Navbar.Brand onClick={scrollTop} style={{ cursor: "pointer" }}>
-          Affordable
+          AfforDEable
         </Navbar.Brand>
         <Navbar.Text onClick={scrollBottom} style={{ cursor: "pointer" }}>
           About Us

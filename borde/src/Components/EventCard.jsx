@@ -15,7 +15,7 @@ function EventCard(props) {
       </Card.Header>
       <Card.Body>
         <Card.Text>{data.description}</Card.Text>
-        <Button variant="primary">REGISTER</Button>
+        <Button variant="secondary">REGISTER</Button>
       </Card.Body>
     </Card>
   );
