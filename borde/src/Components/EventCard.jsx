@@ -3,9 +3,9 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 
 function EventCard(props) {
+  const data = props.data;
   return (
     <Card>
-      <Card.Img variant="top" src="https://picsum.photos/200" />
       <Card.Body>
         <Card.Title>EVENT TITLE</Card.Title>
         <Card.Text>EVENT DESCRIPTION</Card.Text>

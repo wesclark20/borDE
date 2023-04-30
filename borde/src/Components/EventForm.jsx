@@ -12,7 +12,7 @@ function EventForm(props) {
   const setCanSubmit = props.setCanSubmit;
 
   const sendDataToDatabase = (formData) => {
-    const url = "https://example.com/api/data"; // Replace with your API endpoint
+    const url = "https://example.com/api/data";
 
     fetch(url, {
       method: "POST",
@@ -33,7 +33,7 @@ function EventForm(props) {
     props.eventArr.push(props.id);
     props.setId(props.id + 1);
     console.log(jsonFormData);
-    sendDataToDatabase(formData);
+    // sendDataToDatabase(formData);
   };
 
   return (
@@ -71,7 +71,9 @@ function EventForm(props) {
           <Form.Select
             className="mb-3"
             placeholder={"Choose Catagory"}
-            onChange={(e) => setFormData({ ...formData, type: e.target.value })}
+            onChange={(e) =>
+              setFormData({ ...formData, type: e.target.value.toLowerCase() })
+            }
           >
             <option>Volumnteer Program</option>
             <option>Food Drive</option>
