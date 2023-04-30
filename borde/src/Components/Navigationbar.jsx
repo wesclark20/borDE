@@ -10,12 +10,17 @@ function Navigationbar() {
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
         <Navbar.Brand href="#home">BorDE</Navbar.Brand>
-        <NavDropdown title="Community" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#events">Events</NavDropdown.Item>
-          <NavDropdown.Item href="#people">People</NavDropdown.Item>
-          <NavDropdown.Item href="#places">Places</NavDropdown.Item>
-          <NavDropdown.Item href="#charity">Charity</NavDropdown.Item>
-          <NavDropdown.Item href="#jobs">Jobs</NavDropdown.Item>
+        <Navbar.Text>About Us</Navbar.Text>
+        <NavDropdown title="Filter">
+          <NavDropdown.Item>Volumnteer Program</NavDropdown.Item>
+          <NavDropdown.Item>Food Drive</NavDropdown.Item>
+          <NavDropdown.Item>Clothing Drive</NavDropdown.Item>
+          <NavDropdown.Item>Fundraiser</NavDropdown.Item>
+          <NavDropdown.Item>Walkathon</NavDropdown.Item>
+          <NavDropdown.Item>Marathon</NavDropdown.Item>
+          <NavDropdown.Item>Sales</NavDropdown.Item>
+          <NavDropdown.Item>Furniture Drive</NavDropdown.Item>
+          <NavDropdown.Item>Food Program</NavDropdown.Item>
         </NavDropdown>
         <Form className="d-flex">
           <Form.Control

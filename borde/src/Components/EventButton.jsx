@@ -5,7 +5,7 @@ import Button from "react-bootstrap/Button";
 function EventButton(props) {
   return (
     <Button
-      variant="info"
+      variant="primary"
       onClick={props.onClick}
       className="col-md-6 mx-auto mt-4"
     >
