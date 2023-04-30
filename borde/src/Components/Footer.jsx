@@ -26,6 +26,7 @@ function Footer() {
         <Col>
           <ProfileCard
             name={"Ian Duffy"}
+            img={require("../Images/misery-club-penguin.gif")}
             email={"ianduffy@udel.edu"}
             bio={"Sophomore Computer Science: Cyber Security Student"}
           />
@@ -33,6 +34,7 @@ function Footer() {
         <Col>
           <ProfileCard
             name={"Michael Lutz"}
+            img={require("../Images/misery-club-penguin.gif")}
             email={"mplutz@udel.edu"}
             bio={"Freshman Computer Science Student"}
           />
@@ -40,6 +42,7 @@ function Footer() {
         <Col>
           <ProfileCard
             name={"Michael Lutz"}
+            img={require("../Images/misery-club-penguin.gif")}
             email={"mplutz@udel.edu"}
             bio={"Freshman Computer Science Student"}
           />
@@ -47,6 +50,7 @@ function Footer() {
         <Col>
           <ProfileCard
             name={"Michael Lutz"}
+            img={require("../Images/misery-club-penguin.gif")}
             email={"mplutz@udel.edu"}
             bio={"Freshman Computer Science Student"}
           />
