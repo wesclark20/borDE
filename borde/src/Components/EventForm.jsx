@@ -20,6 +20,7 @@ function EventForm(props) {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
+      mode: "no-cors",
     })
       .then((response) => response.json())
       .then((data) => console.log(data))
@@ -33,7 +34,7 @@ function EventForm(props) {
     props.eventArr.push(props.id);
     props.setId(props.id + 1);
     console.log(jsonFormData);
-    // sendDataToDatabase(formData);
+    sendDataToDatabase(formData);
   };
 
   return (
