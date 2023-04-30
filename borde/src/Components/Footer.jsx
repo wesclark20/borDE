@@ -14,10 +14,12 @@ function Footer() {
       to our community. We are all from Delaware and have seen the impact that local charities can have on the community. We are excited to bring that
       impact to the rest of the state.</Col>
       <h3>Our Contact Information</h3>
-      <ProfileCard name = {"Ian Duffy"} img = {"text"} email = {"ianduffy@udel.edu"} bio = {"Sophomore Computer Science: Cyber Security Student"}/>
-      <Col md={8}>Ian Duffy: 
-      <div>Sophomore Computer Science: Cyber Security Student</div>
-      <div>ianduffy@udel.edu</div></Col>
+      
+      <ProfileCard 
+        name = {"Ian Duffy"}
+        email = {"ianduffy@udel.edu"}
+        bio = {"Sophomore Computer Science: Cyber Security Student"}
+      />
     </Container>
     
   );
