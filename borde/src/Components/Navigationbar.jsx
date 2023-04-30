@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "react-bootstrap/Navbar";
 import NavDropdown from "react-bootstrap/NavDropdown";
 import Container from "react-bootstrap/Container";
+import { NavItem } from "react-bootstrap";
 
 function Navigationbar(props) {
   const scrollTop = () => {
@@ -11,15 +12,22 @@ function Navigationbar(props) {
     window.scrollTo(0, document.body.scrollHeight);
   };
   return (
-    <Navbar bg="light" expand="md" sticky="top">
+    <Navbar
+      bg="light"
+      expand="md"
+      sticky="top"
+      style={{ paddingRight: 130, paddingLeft: 130 }}
+    >
       <Container>
-        <Navbar.Brand onClick={scrollTop} style={{ cursor: "pointer" }}>
-          AfforDEable
+        <Navbar.Brand style={{ cursor: "pointer" }}>
+          <Navbar.Brand onClick={scrollTop} style={{ cursor: "pointer" }}>
+            AfforDEable
+          </Navbar.Brand>
+          <Navbar.Text onClick={scrollBottom} style={{ cursor: "pointer" }}>
+            About Us
+          </Navbar.Text>
         </Navbar.Brand>
-        <Navbar.Text onClick={scrollBottom} style={{ cursor: "pointer" }}>
-          About Us
-        </Navbar.Text>
-        <NavDropdown title="Filter">
+        <NavDropdown title="Filter" as={NavItem}>
           <NavDropdown.Item onClick={() => props.setFilter(null)}>
             None
           </NavDropdown.Item>
