@@ -1,4 +1,4 @@
-from flask import Flask, send_file, send_from_directory, url_for
+from flask import Flask, send_file, send_from_directory
 
 app = Flask(__name__)
 
@@ -8,7 +8,11 @@ def serveIndex():
 
 @app.route('/build/<path:path>')
 def serveStatic(path):
-    return send_from_directory('borde\\build\static', path)
+    return send_from_directory('borde\\build', path) #may need \static at the end
 
 if __name__ == '__main__':
     app.run(host='localhost', port=8080, debug=True)
+
+''' To Do:
+-
+'''
